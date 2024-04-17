@@ -11,7 +11,6 @@ certifi==2024.2.2
 chardet==5.2.0
 charset-normalizer==3.3.2
 clean-fid==0.1.35
-command-not-found==0.3
 contourpy==1.2.0
 cryptography==3.4.8
 cycler==0.12.1
