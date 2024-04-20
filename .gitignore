@@ -10,3 +10,5 @@ htmlcov/
 docs/_build/
 model_save.keras
 generator_save.keras
+venv/
+static/
