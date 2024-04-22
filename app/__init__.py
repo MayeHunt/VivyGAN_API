@@ -18,7 +18,14 @@ def create_app():
         app.config['MODEL_BLOB_NAME']
     )
 
+    variation_model = download_model_file(
+        app.config['AZURE_STORAGE_CONNECTION_STRING'],
+        app.config['MODEL_CONTAINER_NAME'],
+        app.config['MODEL_BLOB_NAME_2']
+    )
+
     app.config['model'] = model
+    app.config['variation_model'] = variation_model
 
     from . import routes
     app.register_blueprint(routes.bp)
