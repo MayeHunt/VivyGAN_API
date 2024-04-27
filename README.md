@@ -14,7 +14,8 @@ To use this application:
 1. `git clone https://github.com/MayeHunt/VivyGAN_API.git` to clone this repo.
 2. `cd VivyGAN_API` to change directory to the cloned directory.
 3. Install required packages using: `pip install -r requirements.txt`. Some packages are quite large, ensure at least 1gb is free.
-4. Start the application using gunicorn on linux: `gunicorn --timeout 240 run:app` or Flask on windows: `python -m flask run -p 8000`.
+4. Install [FluidSynth](https://github.com/FluidSynth/fluidsynth/wiki/Download). (e.g on Ubuntu: `sudo apt-get install fluidsynth`)
+5. Start the application using gunicorn on linux: `gunicorn --timeout 240 run:app` or Flask on windows: `python -m flask run -p 8000`.
 
 The application will download necessary files, the model download is around 130mb so it may take a minute.
 
