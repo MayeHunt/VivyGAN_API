@@ -206,6 +206,9 @@ def generate_variations():
         return jsonify({"message": "Batch size not specified"}), 400
     batch_size = int(request.form['batch_size'])
 
+    if not os.path.exists('upload'):
+        os.makedirs('upload')
+
     filename = secure_filename(file.filename)
     file_path = os.path.join('upload', filename)
     file.save(file_path)
