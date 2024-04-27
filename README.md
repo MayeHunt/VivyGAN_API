@@ -6,7 +6,7 @@ API endpoints for the VivyGAN Front-End.
 This is a Flask application that can be operated using any method for POST requests.
 
 ## Setup Guide
-This application requires [Python 3.10](https://www.python.org/downloads/) or higher and [pip](https://pip.pypa.io/en/stable/installation/) be installed
+This application requires [Python 3.10](https://www.python.org/downloads/) or higher and [pip](https://pip.pypa.io/en/stable/installation/) be installed.
 To use this application:
 
 1. `git clone https://github.com/MayeHunt/VivyGAN_API.git` to clone this repo.
