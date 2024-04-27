@@ -1,5 +1,7 @@
 # VivyGAN API
 
+### This application is intended to be deployed on a Linux VM, as such you may encounter issues running it on Windows. If using Windows 10 or 11, consider setting up [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) and installing it there.
+
 This project should be used in conjunction with the [VivyGAN Front-End](https://github.com/MayeHunt/VivyGAN_Front).
 
 API endpoints for the VivyGAN Front-End.
