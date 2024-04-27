@@ -12,6 +12,8 @@ To use this application:
 1. `git clone https://github.com/MayeHunt/VivyGAN_API.git` to clone this repo.
 2. `cd VivyGAN_API` to change directory to the cloned directory.
 3. Install required packages using: `pip install -r requirements.txt`. Some packages are quite large, ensure at least 1gb is free.
-4. Start the application using gunicorn: `gunicorn --timeout 240 run:app`
+4. Start the application using gunicorn on linux: `gunicorn --timeout 240 run:app` or Flask on windows: `python -m flask run -p 8000`.
+
+The application will download necessary files, the model download is around 130mb so it may take a minute.
 
 The application will now be ready to accept API calls from the [VivyGAN Front-End](https://github.com/MayeHunt/VivyGAN_Front).
