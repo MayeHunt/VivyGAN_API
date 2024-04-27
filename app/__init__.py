@@ -1,8 +1,10 @@
 from flask import Flask
+from flask_cors import CORS
 from .model.download_model import download_model_file
 
 def create_app():
-    app = Flask(__name__, instance_relative_config=True)
+    app = Flask(__name__, static_folder='static', instance_relative_config=True)
+    CORS(app, resources={r"/*": {"origins": "*"}})
     app.config.from_pyfile('config.py', silent=True)
 
     # real heroku blob connection
